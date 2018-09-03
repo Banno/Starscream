@@ -462,7 +462,7 @@ open class WebSocket : NSObject, StreamDelegate, WebSocketClient, WSStreamDelega
                 origin = hostUrl.absoluteString
                 origin.remove(at: origin.index(before: origin.endIndex))
             }
-            self.request.setValue(origin, forHTTPHeaderField: headerOriginName)
+            //self.request.setValue(origin, forHTTPHeaderField: headerOriginName)
         }
         if let protocols = protocols {
             self.request.setValue(protocols.joined(separator: ","), forHTTPHeaderField: headerWSProtocolName)
