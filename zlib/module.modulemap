@@ -1,4 +1,4 @@
-module ZLib [system] {
+module SSZLib [system] {
     header "include.h"
     link "z"
     export *
